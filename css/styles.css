@@ -32,6 +32,21 @@
 	border-radius: 0.75rem;
 }
 
+.trirun-download-button:hover
+{
+	transform: scale(1.1);
+}
+
+.trirun-download-button:active
+{
+	transform: scale(0.9);
+}
+
+.trirun-download-button:hover .trirun-download-button img
+{
+	border: 2px solid var(--clr-white-tr-75);
+}
+
 .trirun-about-items
 {
 	width: 80vw;
