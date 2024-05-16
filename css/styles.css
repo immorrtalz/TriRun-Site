@@ -22,6 +22,7 @@
 {
 	width: fit-content;
 	height: fit-content;
+	will-change: transform;
 }
 
 .trirun-download-button img
@@ -35,11 +36,13 @@
 .trirun-download-button:hover
 {
 	transform: scale(1.1);
+	will-change: transform;
 }
 
 .trirun-download-button:active
 {
 	transform: scale(0.9);
+	will-change: transform;
 }
 
 .trirun-download-button:hover .trirun-download-button img
@@ -122,30 +125,13 @@
 	margin-bottom: 1rem;
 }
 
-.trirun-license-item-button
+.trirun-docs-text
 {
-	position: relative;
-	width: fit-content;
+	width: 80vw;
 	height: fit-content;
-	padding: 1rem 1.5rem;
-	border-radius: 1rem;
-	text-align: center;
-	font-weight: 600;
-}
-
-.trirun-license-item-button::before
-{
-	content: '';
-	position: absolute;
-	inset: 0;
-	border-radius: inherit;
-	transform: scale(0.95, 0.75);
-}
-
-.trirun-license-item-button:hover::before
-{
-	background: rgba(255, 255, 255, 0.1);
-	transform: scale(1);
+	color: var(--clr-white-tr-75);
+	white-space: pre-wrap;
+	text-align: justify;
 }
 
 @media (max-width: 1300px)
@@ -181,6 +167,12 @@
 		width: 100%;
 		height: 12.5rem;
 	}
+
+	.trirun-docs-text
+	{
+		width: 85vw;
+		font-size: 90%;
+	}
 }
 
 @media (max-width: 425px)
@@ -190,9 +182,9 @@
 		max-height: 3rem;
 	}
 
-	.trirun-license-item-button
+	.trirun-docs-text
 	{
-		padding: 0.5rem 1rem;
-		font-size: 80%;
+		width: 90vw;
+		font-size: 85%;
 	}
 }
